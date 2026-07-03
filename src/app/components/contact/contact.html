@@ -1,0 +1,73 @@
+<section class="contact">
+
+  <div class="heading">
+
+    <p class="tag">CONTACT US</p>
+
+    <h2>Visit Brew Haven</h2>
+
+    <p class="subtitle">
+      We'd love to hear from you. Stop by for a coffee or send us a message.
+    </p>
+
+  </div>
+
+  <div class="contact-container">
+
+    <div class="info">
+
+      <div class="info-card">
+        <h3>📍 Address</h3>
+        <p>57 Church Street<br>Bangalore, KA</p>
+      </div>
+
+      <div class="info-card">
+        <h3>📞 Phone</h3>
+        <p>+91 9114201430</p>
+      </div>
+
+      <div class="info-card">
+        <h3>✉ Email</h3>
+        <p>hello@brewhaven.com</p>
+      </div>
+
+      <div class="info-card">
+        <h3>🕒 Opening Hours</h3>
+        <p>Mon - Sun<br>8:00 AM – 9:00 PM</p>
+      </div>
+
+    </div>
+
+    <form (ngSubmit)="submit()" #contactForm="ngForm">
+
+      <input
+        type="text"
+        name="name"
+        [(ngModel)]="form.name"
+        placeholder="Your Name"
+        required>
+
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="form.email"
+        placeholder="Your Email"
+        required>
+
+      <textarea
+        rows="6"
+        name="message"
+        [(ngModel)]="form.message"
+        placeholder="Write your message..."
+        required>
+      </textarea>
+
+      <button type="submit">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>

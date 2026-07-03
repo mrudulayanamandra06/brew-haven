@@ -1,0 +1,139 @@
+.navbar{
+    position:fixed;
+    top:18px;
+    left:50%;
+    transform:translateX(-50%);
+    width:94%;
+    max-width:1300px;
+    background:rgba(12,12,12,.72);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    z-index:1000;
+}
+
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 34px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    cursor:pointer;
+    user-select:none;
+}
+
+.w{
+    color:#fff;
+}
+
+.y{
+    color:#C89B3C;
+}
+
+.nav{
+    display:flex;
+    list-style:none;
+    gap:34px;
+}
+
+.nav-link{
+    color:#fff;
+    text-decoration:none;
+    cursor:pointer;
+    position:relative;
+    transition:.3s;
+    font-weight:500;
+}
+
+.nav-link::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:2px;
+    background:#C89B3C;
+    transition:.35s;
+}
+
+.nav-link:hover{
+    color:#C89B3C;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+.btn{
+    border:none;
+    padding:13px 26px;
+    border-radius:999px;
+    background:#C89B3C;
+    color:#111;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 8px 25px rgba(200,155,60,.25);
+}
+
+.btn:hover{
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 18px 45px rgba(200,155,60,.45);
+}
+
+.burger{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#C89B3C;
+}
+
+.mobile{
+    max-height:0;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    background:#111;
+    transition:max-height .35s ease;
+    border-radius:0 0 20px 20px;
+}
+
+.mobile.open{
+    max-height:420px;
+}
+
+.mobile a{
+    padding:18px 28px;
+    color:#fff;
+    cursor:pointer;
+    text-decoration:none;
+    border-top:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.mobile a:hover{
+    background:#1b1b1b;
+    color:#C89B3C;
+}
+
+@media(max-width:900px){
+
+.nav,
+.btn{
+display:none;
+}
+
+.burger{
+display:block;
+}
+
+.container{
+padding:16px 24px;
+}
+
+}

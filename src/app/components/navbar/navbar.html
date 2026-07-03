@@ -1,0 +1,53 @@
+<nav class="navbar">
+
+  <div class="container">
+
+    <div class="logo" (click)="scrollTo('home')">
+      <span class="w">Brew</span><span class="y">Haven</span>
+    </div>
+
+    <ul class="nav">
+
+      <li><a class="nav-link" (click)="scrollTo('home')">Home</a></li>
+
+      <li><a class="nav-link" (click)="scrollTo('featured')">Coffee</a></li>
+
+      <li><a class="nav-link" (click)="scrollTo('menu')">Menu</a></li>
+
+      <li><a class="nav-link" (click)="scrollTo('about')">About</a></li>
+
+      <li><a class="nav-link" (click)="scrollTo('gallery')">Gallery</a></li>
+
+      <li><a class="nav-link" (click)="scrollTo('contact')">Contact</a></li>
+
+    </ul>
+
+    <button class="btn" (click)="scrollTo('contact')">
+      Reserve Table
+    </button>
+
+    <div class="burger" (click)="toggleMenu()">
+
+      ☰
+
+    </div>
+
+  </div>
+
+  <div class="mobile" [class.open]="menuOpen">
+
+    <a (click)="scrollTo('home')">Home</a>
+
+    <a (click)="scrollTo('featured')">Coffee</a>
+
+    <a (click)="scrollTo('menu')">Menu</a>
+
+    <a (click)="scrollTo('about')">About</a>
+
+    <a (click)="scrollTo('gallery')">Gallery</a>
+
+    <a (click)="scrollTo('contact')">Contact</a>
+
+  </div>
+
+</nav>
