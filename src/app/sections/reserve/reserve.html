@@ -1,0 +1,31 @@
+<section id="reserve" class="reserve">
+
+  <h2>Reserve Your Table</h2>
+
+  <p>Book your perfect coffee experience in seconds</p>
+
+  <form (ngSubmit)="submitForm()" #form="ngForm">
+
+    <input type="text" name="name" placeholder="Your Name" ngModel required>
+
+    <input type="email" name="email" placeholder="Email" ngModel required>
+
+    <input type="tel" name="phone" placeholder="Phone Number" ngModel required>
+
+    <input type="date" name="date" ngModel required>
+
+    <select name="time" ngModel required>
+      <option value="">Select Time</option>
+      <option>8:00 AM</option>
+      <option>10:00 AM</option>
+      <option>12:00 PM</option>
+      <option>2:00 PM</option>
+      <option>6:00 PM</option>
+      <option>8:00 PM</option>
+    </select>
+
+    <button type="submit">Confirm Reservation</button>
+
+  </form>
+
+</section>

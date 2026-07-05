@@ -19,3 +19,10 @@ section{
     max-width:1300px;
     margin:auto;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 110px;
+}

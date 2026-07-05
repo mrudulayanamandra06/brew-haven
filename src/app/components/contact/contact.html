@@ -1,72 +1,56 @@
-<section class="contact">
+<section id="contact" class="contact">
 
   <div class="heading">
 
-    <p class="tag">CONTACT US</p>
+    <p class="tag">CONTACT</p>
 
-    <h2>Visit Brew Haven</h2>
+    <h2>Get In Touch</h2>
 
     <p class="subtitle">
-      We'd love to hear from you. Stop by for a coffee or send us a message.
+      Visit us in Bengaluru or drop a message. We’d love to hear from you.
     </p>
 
   </div>
 
   <div class="contact-container">
 
+    <form>
+
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="email" placeholder="Your Email" required>
+
+      <input type="text" placeholder="Subject">
+
+      <textarea placeholder="Your Message" rows="5"></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
     <div class="info">
 
-      <div class="info-card">
-        <h3>📍 Address</h3>
-        <p>57 Church Street<br>Bangalore, KA</p>
+      <div class="box">
+        <h3>📍 Location</h3>
+        <p>57 Church Street, Bengaluru</p>
       </div>
 
-      <div class="info-card">
+      <div class="box">
         <h3>📞 Phone</h3>
-        <p>+91 9114201430</p>
+        <p>+91 911420 14357</p>
       </div>
 
-      <div class="info-card">
-        <h3>✉ Email</h3>
+      <div class="box">
+        <h3>✉️ Email</h3>
         <p>hello@brewhaven.com</p>
       </div>
 
-      <div class="info-card">
-        <h3>🕒 Opening Hours</h3>
-        <p>Mon - Sun<br>8:00 AM – 9:00 PM</p>
+      <div class="box">
+        <h3>⏰ Hours</h3>
+        <p>Mon - Sun: 8AM - 10PM</p>
       </div>
 
     </div>
-
-    <form (ngSubmit)="submit()" #contactForm="ngForm">
-
-      <input
-        type="text"
-        name="name"
-        [(ngModel)]="form.name"
-        placeholder="Your Name"
-        required>
-
-      <input
-        type="email"
-        name="email"
-        [(ngModel)]="form.email"
-        placeholder="Your Email"
-        required>
-
-      <textarea
-        rows="6"
-        name="message"
-        [(ngModel)]="form.message"
-        placeholder="Write your message..."
-        required>
-      </textarea>
-
-      <button type="submit">
-        Send Message
-      </button>
-
-    </form>
 
   </div>
 

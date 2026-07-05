@@ -1,4 +1,4 @@
-<section class="hero">
+<section id="home" class="hero">
 
   <div class="content">
 
@@ -11,14 +11,21 @@
       </p>
 
       <div class="buttons">
-        <button class="primary">Explore Menu</button>
-        <button class="secondary">Reserve Table</button>
+
+        <button class="primary" (click)="scrollTo('featured')">
+          Explore Menu
+        </button>
+
+        <button class="secondary" (click)="scrollTo('reserve')">
+          Reserve Table
+        </button>
+
       </div>
 
     </div>
 
     <div class="image">
-      <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb" />
+      <img src="assets/images/hero.jpg" alt="Hero">
     </div>
 
   </div>
